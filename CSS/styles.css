@@ -8,12 +8,19 @@
     font-style: normal;
 }
 
+@font-face
+{
+    font-family: 'Roboto-light';
+    src: url('Polices/Roboto-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Éléments principaux */
 
 body
 {
-    width: auto;
-    max-width: 1200px;
+    width: 1200px;
     margin: auto;
     justify-content: center;
 }
@@ -52,8 +59,18 @@ section
 
 section #banniere
 {
-    background: url('Images/background_image.jpg') no-repeat;
-    text-align: center;
+    background: url('../Images/backgroung_image.jpg') no-repeat;
+    background-size: 100%;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section #banniere img
+{
+    height: 12%;
 }
 
 /* Article */
