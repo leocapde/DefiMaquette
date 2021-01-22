@@ -1,0 +1,86 @@
+/* Définition des polices */
+
+@font-face
+{
+    font-family: 'Roboto-black';
+    src: url('Polices/Roboto-black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Éléments principaux */
+
+body
+{
+    width: auto;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: center;
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav
+{
+    align-self: center;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li
+{
+    margin-right: 10px;
+}
+
+/* Section */
+
+section
+{
+    display: flex;
+    flex-direction: column;
+}
+
+section #banniere
+{
+    background: url('Images/background_image.jpg') no-repeat;
+    text-align: center;
+}
+
+/* Article */
+
+section article
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 20% 0 20%;
+}
+
+section article #themes
+{
+    display: flex;
+}
+
+section article #themes div
+{
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    margin: 0 10px 0 10px;
+    align-items: center;
+}
+
+section article #themes div img
+{
+    width: 30%;
+}
