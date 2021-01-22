@@ -80,12 +80,13 @@ section article
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 0 20% 0 20%;
+    margin: 10px 20% 10px 20%;
 }
 
 section article #themes
 {
     display: flex;
+    margin-top: 10px;
 }
 
 section article #themes div
