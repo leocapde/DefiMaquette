@@ -80,7 +80,7 @@ section article
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 10px 20% 10px 20%;
+    margin: 10px 20% 0 20%;
 }
 
 section article #themes
@@ -101,4 +101,26 @@ section article #themes div
 section article #themes div img
 {
     width: 30%;
+}
+
+/* Footer */
+
+footer
+{
+    background-color: #5c349c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer #liens
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+footer #liens #coordonnees ul
+{
+    list-style-type: none;
 }
