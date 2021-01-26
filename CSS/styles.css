@@ -8,14 +8,6 @@
     font-style: normal;
 }
 
-@font-face
-{
-    font-family: 'Roboto-light';
-    src: url('Polices/Roboto-light.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Éléments principaux */
 
 body
@@ -66,11 +58,12 @@ section #banniere
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: -10px; /* Permet de coller la bannière au logo du header */
 }
 
 section #banniere img
 {
-    height: 12%;
+    height: 13%;
 }
 
 /* Article */
@@ -107,10 +100,17 @@ section article #themes div img
 
 footer
 {
-    background-color: #5c349c;
+    background-color: #5B359D;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+footer #reseaux_sociaux i
+{
+    font-size: 2em;
+    color: #BDAED8;
+    margin: 0 30px;
 }
 
 footer #liens
