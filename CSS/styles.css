@@ -1,13 +1,3 @@
-/* Définition des polices */
-
-@font-face
-{
-    font-family: 'Roboto-black';
-    src: url('Polices/Roboto-black.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* Éléments principaux */
 
 body
@@ -15,6 +5,7 @@ body
     width: 1200px;
     margin: auto;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Header */
@@ -61,6 +52,11 @@ section #banniere
     margin-top: -10px; /* Permet de coller la bannière au logo du header */
 }
 
+section #banniere h1
+{
+    color: white;
+}
+
 section #banniere img
 {
     height: 13%;
@@ -74,6 +70,12 @@ section article
     flex-direction: column;
     text-align: center;
     margin: 10px 20% 0 20%;
+}
+
+section article h1
+{
+    color: #57577D;
+    font-weight: normal;
 }
 
 section article #themes
@@ -96,6 +98,30 @@ section article #themes div img
     width: 30%;
 }
 
+section article #themes div h1
+{
+    color: black;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+section article #themes div p
+{
+    font-size: 0.8em;
+}
+
+section article blockquote p
+{
+    color: #57577D;
+}
+
+section article blockquote cite
+{
+    color: #57577D;
+    font-size: 0.8em;
+    font-style: normal;
+}
+
 /* Footer */
 
 footer
@@ -104,6 +130,7 @@ footer
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: white;
 }
 
 footer #reseaux_sociaux i
@@ -118,6 +145,12 @@ footer #liens
     display: flex;
     width: 100%;
     justify-content: space-around;
+}
+
+footer #liens h1
+{
+    font-size: 1.2em;
+    color: #BDAED8;
 }
 
 footer #liens #coordonnees ul
