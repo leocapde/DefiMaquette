@@ -2,7 +2,8 @@
 
 body
 {
-    width: 1200px;
+    max-width: 1200px;
+    min-width: 600px;
     margin: auto;
     justify-content: center;
     font-family: 'Roboto', sans-serif;
@@ -42,24 +43,33 @@ section
 
 section #banniere
 {
-    background: url('../Images/backgroung_image.jpg') no-repeat;
-    background-size: 100%;
-    height: 470px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative; 
     margin-top: -10px; /* Permet de coller la bannière au logo du header */
 }
 
-section #banniere h1
+section #banniere #banniere_texte
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Permet de positionner #banniere_texte par rapport a son centre */
+    width: 400px;
+    text-align: center;
+}
+
+section #banniere #banniere_texte h1
 {
     color: white;
 }
 
-section #banniere img
+section #banniere #banniere_texte img
 {
-    height: 13%;
+    width: 50%;
+}
+
+section #banniere #banniere_image img
+{
+    width: 100%;
 }
 
 /* Article */
